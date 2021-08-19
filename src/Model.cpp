@@ -25,7 +25,7 @@ void Model::Draw(Shader& shader, Camera& camera)
 
 void Model::loadMesh(unsigned int indMesh)
 {
-	printf("Loading Mesh: %s", "LOL");
+	std::cout << "Loading Mesh..." << std::endl;
 	// Get all accessor indices
 	unsigned int posAccInd = JSON["meshes"][indMesh]["primitives"][0]["attributes"]["POSITION"];
 	unsigned int normalAccInd = JSON["meshes"][indMesh]["primitives"][0]["attributes"]["NORMAL"];
@@ -47,10 +47,13 @@ void Model::loadMesh(unsigned int indMesh)
 
 	// Combine the vertices, indices, and textures into a mesh
 	meshes.push_back(Mesh(vertices, indices, textures));
+
+	std::cout << "Mesh Loaded Successfully" << std::endl;
 }
 
 void Model::traverseNode(unsigned int nextNode, glm::mat4 matrix)
 {
+	std::cout << "Traversing Node..." << std::endl;
 	// Current node
 	json node = JSON["nodes"][nextNode];
 

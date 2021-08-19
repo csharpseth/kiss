@@ -20,12 +20,7 @@
         },
         {
             "mesh" : 1,
-            "name" : "bunker",
-            "translation" : [
-                10.496771812438965,
-                15.898619651794434,
-                0
-            ]
+            "name" : "bunker"
         }
     ],
     "meshes" : [
@@ -58,10 +53,7 @@
     ],
 	"images" : [
 		{
-			"uri" : "textures/diffuse.png"
-		},
-		{
-			"uri" : "textures/bunker.png"
+			"uri" : "textures/ground_diffuse.png"
 		}
 	],
     "accessors" : [
@@ -102,15 +94,15 @@
         {
             "bufferView" : 4,
             "componentType" : 5126,
-            "count" : 190,
+            "count" : 179,
             "max" : [
-                25.703811645507812,
-                0.20811498165130615,
+                36.200584411621094,
+                16.106735229492188,
                 12.368982315063477
             ],
             "min" : [
-                -10.481030464172363,
-                -5.949708938598633,
+                0.015741348266601562,
+                9.9489107131958,
                 -3.1536865234375
             ],
             "type" : "VEC3"
@@ -118,13 +110,13 @@
         {
             "bufferView" : 5,
             "componentType" : 5126,
-            "count" : 190,
+            "count" : 179,
             "type" : "VEC3"
         },
         {
             "bufferView" : 6,
             "componentType" : 5126,
-            "count" : 190,
+            "count" : 179,
             "type" : "VEC2"
         },
         {
@@ -157,28 +149,28 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 2280,
+            "byteLength" : 2148,
             "byteOffset" : 758064
         },
         {
             "buffer" : 0,
-            "byteLength" : 2280,
-            "byteOffset" : 760344
+            "byteLength" : 2148,
+            "byteOffset" : 760212
         },
         {
             "buffer" : 0,
-            "byteLength" : 1520,
-            "byteOffset" : 762624
+            "byteLength" : 1432,
+            "byteOffset" : 762360
         },
         {
             "buffer" : 0,
             "byteLength" : 672,
-            "byteOffset" : 764144
+            "byteOffset" : 763792
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 764816,
+            "byteLength" : 764464,
             "uri" : "scene.bin"
         }
     ]

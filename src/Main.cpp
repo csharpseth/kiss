@@ -35,6 +35,7 @@ int main()
 	// Specify the viewport of OpenGL in the Window
 	// In this case the viewport goes from x = 0, y = 0, to x = 800, y = 800
 	glViewport(0, 0, width, height);
+	std::cout << "Successfully Created A Window & Initialized Viewport" << std::endl;
 
 
 
@@ -69,6 +70,7 @@ int main()
 
 	// Load in models
 	Model ground("models/ground/scene.gltf");
+	Model bunker("models/bunker/scene.gltf");
 
 	double prevTime = 0.0;
 	double curTime = 0.0;
@@ -101,10 +103,11 @@ int main()
 		// Handles camera inputs
 		camera.Inputs(window);
 		// Updates and exports the camera matrix to the Vertex Shader
-		camera.updateMatrix(45.0f, 0.1f, 100.0f);
+		camera.updateMatrix(65.0f, 0.1f, 1000.0f);
 
 		// Draw models
 		ground.Draw(shaderProgram, camera);
+		bunker.Draw(shaderProgram, camera);
 
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);
